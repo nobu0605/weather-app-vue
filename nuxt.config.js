@@ -3,7 +3,11 @@ export default {
   head: {
     title: 'weather-app-vue',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'ja',
+      class: 'html-class',
+    },
+    bodyAttrs: {
+      class: 'body-class',
     },
     meta: [
       { charset: 'utf-8' },
@@ -28,10 +32,12 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxt/postcss8',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxt/image'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

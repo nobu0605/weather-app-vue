@@ -7,7 +7,11 @@ module.exports = {
     './nuxt.config.{js,ts}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        1.25: '5px',
+      },
+    },
   },
   plugins: [],
 }

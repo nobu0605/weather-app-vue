@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.html-class,
+.body-class,
+#__nuxt,
+#__layout {
+  height: 100%;
+}
